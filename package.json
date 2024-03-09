@@ -1,0 +1,26 @@
+{
+  "name": "spire-api",
+  "version": "1.0.0",
+  "description": "Client API to connect to Spire backend",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "Spire",
+    "EQ"
+  ],
+  "dependencies": {
+    "axios": "^1.6.7",
+    "util": "^0.12.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "tslib": "^2.6.2",
+    "typescript": "^3.9.10"
+  },
+  "author": "Akkadius and temp0",
+  "license": "ISC"
+}
