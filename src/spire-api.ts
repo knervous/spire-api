@@ -59,6 +59,11 @@ export class SpireApi {
       return x
     })
 
+    axios.interceptors.request.use(x => {
+      x.headers['x-remote-api'] = SpireApi.remoteUrl;
+      return x
+    });
+
     client.interceptors.response.use(response => {
       return response;
     }, error => {
