@@ -1,6 +1,6 @@
 {
   "name": "spire-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Client API to connect to Spire backend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,6 +22,7 @@
     "./wrappers/items": "./lib/wrappers/items.js",
     "./wrappers/loot": "./lib/wrappers/loot.js",
     "./wrappers/spawn": "./lib/wrappers/spawn.js",
+    "./wrappers/npcs": "./lib/wrappers/npcs.js",
     "./wrappers/zones": "./lib/wrappers/zones.js",
     "./api/aa-ability-api": "./lib/api/aa-ability-api.js",
     "./api/aa-rank-api": "./lib/api/aa-rank-api.js",
