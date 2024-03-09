@@ -1,5 +1,6 @@
 import axios, {AxiosRequestConfig} from 'axios'
 import util from "util";
+import { SpireApi } from './spire-api';
 
 
 const params = new Proxy(new URLSearchParams(window.location.search), {
@@ -23,7 +24,7 @@ export class OcculusClient {
   static client(config: AxiosRequestConfig = {}) {
     config.baseURL = (this._baseUrl + '/api/v1/admin/occulus')
     if (this.getAccessToken() !== '') {
-      config.headers = {'Authorization': 'Bearer ' + this.getAccessToken() }
+      config.headers = {'Authorization': 'Bearer ' + this.getAccessToken(), 'x-remote-api': SpireApi.remoteUrl }
     }
 
     return axios.create(config)

@@ -11,7 +11,7 @@ export class SpireApi {
     }
 
     if (UserContext.getAccessToken() !== "") {
-      spireAxiosConfig.headers = {'Authorization': 'Bearer ' + UserContext.getAccessToken() }
+      spireAxiosConfig.headers = {'Authorization': 'Bearer ' + UserContext.getAccessToken(), 'x-remote-api': SpireApi.remoteUrl }
     }
     return spireAxiosConfig
   }
