@@ -1,6 +1,6 @@
 import util from "util";
-import {SpireApi} from "@/app/api/spire-api";
-import UserContext from "@/app/user/UserContext";
+import {SpireApi} from "./spire-api";
+import UserContext from "./user-context";
 
 export class SpireWebsocketClient {
   static websocket(): any {
@@ -17,7 +17,7 @@ export class SpireWebsocketClient {
 
     const uri = util.format(
       "ws:%s/api/v1/websocket?jwt=" + UserContext.getAccessToken(),
-      SpireApi.getBasePath().replaceAll("http://", "")
+      SpireApi.v1Path.replaceAll("http://", "")
     )
 
     this._ws = new WebSocket(uri)

@@ -1,5 +1,5 @@
 import axios from "axios";
-import UserContext from "./UserContext";
+import UserContext from "./user-context";
 
 
 export class SpireApi {

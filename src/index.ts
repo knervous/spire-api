@@ -12,15 +12,7 @@
  * Do not edit the class manually.
  */
 
-const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop: string) => searchParams.get(prop),
-  }) as any;
-if (params.remote_backend) {
-localStorage.setItem('remote-backend', params.remote_backend);
-}
-  
-const remote_backend = params.remote_backend ?? localStorage.getItem('remote-backend');
-
-export * from "./api";
 export * from "./configuration";
-export * from "./models";
+export * from './spire-api';
+export * from './user-context';
+export * from './models';
