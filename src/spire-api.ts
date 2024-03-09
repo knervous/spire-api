@@ -1,5 +1,5 @@
 import axios from "axios";
-import UserContext from "./user-context";
+import {UserContext} from "./user-context";
 
 
 export class SpireApi {
@@ -7,7 +7,7 @@ export class SpireApi {
 
   static getAxiosConfig() {
     let spireAxiosConfig = <any>{
-      baseURL: SpireApi.v1Path
+
     }
 
     if (UserContext.getAccessToken() !== "") {

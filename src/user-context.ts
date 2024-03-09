@@ -7,7 +7,7 @@ import axios from "axios";
 
 const TOKEN_KEY = "spire-web-access-token-" + location.host;
 
-export default class UserContext {
+export class UserContext {
   private static user: any = {};
   private static loaded: boolean;
   private static permissions: any = {};

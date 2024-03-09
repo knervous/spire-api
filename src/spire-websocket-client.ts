@@ -1,6 +1,6 @@
 import util from "util";
 import {SpireApi} from "./spire-api";
-import UserContext from "./user-context";
+import {UserContext} from "./user-context";
 
 export class SpireWebsocketClient {
   static websocket(): any {
