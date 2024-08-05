@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "esnext",
+    "target": "es2016",
+    "module": "commonjs",
+
+    "forceConsistentCasingInFileNames": true,
+    
     "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "skipLibCheck": true,
     "outDir": "./lib",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,7 +22,7 @@
     ],
     "noImplicitAny": false,
     "types": [
-      "node",
+      "node"
     ],
     "paths": {
       "@/*": [
@@ -31,10 +34,7 @@
       "dom",
       "dom.iterable",
       "scripthost",
-      "DOM",
       "ES6",
-      "DOM.Iterable",
-      "ScriptHost",
       "ES2016.Array.Include"
     ]
   },
@@ -44,8 +44,5 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }

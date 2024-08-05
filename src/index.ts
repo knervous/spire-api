@@ -15,5 +15,4 @@
 export * from "./configuration";
 export * from './spire-api';
 export * from './spire-query-builder';
-export * from './user-context';
 export * from './models';
